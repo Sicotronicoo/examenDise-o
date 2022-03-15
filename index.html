@@ -33,8 +33,7 @@
                     </li>
                     <li>
                         <div id="btnDislexicos" class="dislexicos">
-                            <a type="button" id="cambioFuente" class="nav-link" onclick="fuenteDislexicos()">MODO
-                                DISLEXICOS</a>
+                            <a id="cambioFuente" class="nav-link" onclick="fuenteDislexicos()">FUENTE DISLEXICOS</a>
                         </div>
                     </li>
                 </ul>
@@ -48,19 +47,19 @@
     <br>
     <header>
         <div class="overlay">
-            <h1 name="h1">Sociedad Gaditana de Historia Natural</h1>
-            <img src="img/icono.png">
+            <h1 name="titulos">Sociedad Gaditana de Historia Natural</h1>
+            <img src="img/icono.png" alt="icono de la web sociedad gaditana de historia natural">
             <!--<button>READ MORE</button>-->
         </div>
     </header>
     <div class="container">
         <div class="p-5 my-4 bg-light rounded-3">
-            <h1 name="h1">Sociedad Gaditana de Historia Natural</h1>
+            <h1 name="titulos">Sociedad Gaditana de Historia Natural</h1>
             <p name="cambio" class="lead">Aqui podras encontrar toda la informacion sobre parques naturales y sus
                 distintas especies,
                 toda la información de las especies que habitan estos parques y sobre todo de sus maravillosas aves.</p>
             <div>
-                <img src="img/parque.jpg" class="imagenes">
+                <img alt="desconocido" src="img/parque.jpg" class="imagenes">
             </div>
         </div>
         <div class="row g-3">
@@ -70,7 +69,7 @@
                     los fringílidos.
                 </p>
                 <div>
-                    <img src="img/jilguero.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/jilguero.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -78,7 +77,7 @@
                 <p name="cambio">El diamante de Gould ​ es una especie de ave paseriforme de la familia Estrildidae
                     nativa del norte de Australia.​ </p>
                 <div>
-                    <img src="img/diamantes.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/diamantes.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -86,7 +85,7 @@
                 <p name="cambio">La abubilla​ es una especie de ave bucerotiforme de la familia Upupidae;​ Upupa es
                     separado en un orden propio.</p>
                 <div>
-                    <img src="img/upupa.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/upupa.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -94,7 +93,7 @@
                 <p name="cambio">La urraca común, ​ también conocida como picaza, picaraza, marica y pega, ​​​ es una
                     especie de ave paseriforme</p>
                 <div>
-                    <img src="img/urraca.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/urraca.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -102,7 +101,7 @@
                 <p name="cambio">El petirrojo europeo​ es una especie de ave paseriforme de la familia Muscicapidae.​
                     Está distribuido por toda Europa,</p>
                 <div>
-                    <img src="img/petirrojo.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/petirrojo.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -110,7 +109,7 @@
                 <p name="cambio">El pardillo común ​ es una especie de ave paseriforme de la familia Fringillidae propia
                     del Paleártico occidental.</p>
                 <div>
-                    <img src="img/pardillo.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/pardillo.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -118,7 +117,7 @@
                 <p name="cambio">El triguero es otra ave que se encuentra por casi todo el continente europeo, incluso
                     en África y Asia. </p>
                 <div>
-                    <img src="img/triguero.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/triguero.jpg" class="imagenes">
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3">
@@ -126,7 +125,7 @@
                 <p name="cambio">El águila o aguililla calzada​ es una especie de ave accipitriforme de la familia
                     Accipitridae. Es un ave rapaz de mediano.</p>
                 <div>
-                    <img src="img/aguila.jpg" class="imagenes">
+                    <img alt="desconocido" src="img/aguila.jpg" class="imagenes">
                 </div>
             </div>
 
@@ -155,14 +154,14 @@
                 let font = new FontFace('OpenDyslexic-Regular', 'url(/font/OpenDyslexic-Regular.otf)');
                 if (click === 1) {
                     let cambioFuente = document.getElementById('cambioFuente');
-                    cambioFuente.innerText = 'MODO NORMAL';
+                    cambioFuente.innerText = 'FUENTE POR DEFECTO';
                     document.body.style.fontFamily = "OpenDyslexic-Regular";
                     let cambio = document.getElementsByName("cambio");
                     for (let item of cambio) {
                         item.setAttribute('style', "font-family:'OpenDyslexic-Regular';");
                     }
 
-                    let h1 = document.getElementsByName("h1");
+                    let h1 = document.getElementsByName("titulos");
                     for (let item of h1) {
                         item.setAttribute('style', "font-family:'OpenDyslexic-Regular';");
                     }
